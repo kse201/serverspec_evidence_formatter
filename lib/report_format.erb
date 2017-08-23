@@ -1,0 +1,36 @@
+# Description
+<%= description %>
+
+# Result
+<%= result %>
+
+# Command
+
+~~~
+<%= command %>
+~~~
+
+# Stdout
+
+~~~
+<%= stdout %>
+~~~
+
+<% if resource.is_a? Serverspec::Type::Command -%>
+# Stderr
+
+~~~
+<%= stderr %>
+~~~
+
+# Exit Status
+<%= exit_status %>
+
+<% if exception -%>
+# Exception
+
+~~~
+<%= exception.message %>
+~~~
+<% end -%>
+<% end -%>
