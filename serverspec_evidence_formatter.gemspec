@@ -6,12 +6,12 @@ require "serverspec_evidence_formatter/version"
 Gem::Specification.new do |spec|
   spec.name          = "serverspec_evidence_formatter"
   spec.version       = ServerspecEvidenceFormatter::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ["kse201"]
+  spec.email         = ["kse.201@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
+  spec.description   = %q{ Write a longer description or delete this line.}
+  # spec.homepage      = "Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

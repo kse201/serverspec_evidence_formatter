@@ -1,8 +1,9 @@
-require "serverspec_evidence_formatter/version"
+# require "serverspec_evidence_formatter/version"
 
 require 'date'
 require 'erb'
 
+require 'rspec'
 require 'rspec/core/formatters'
 require 'specinfra'
 require 'serverspec/version'
@@ -23,8 +24,8 @@ class ServerspecEvidenceFormatter < RSpec::Core::Formatters::BaseTextFormatter
     @evidence_path = 'evidence'
     @report_format = 'report_format.erb'
 
-    node = ENV['TARGET_HOST'] || Specinfra.configration.host
-    @evidence_root = File.join(@evidence_path, @timestamp, node)
+    # node = ENV['TARGET_HOST'] || Specinfra.configration.host
+    @evidence_root = File.join(@evidence_path, @timestamp)
     FileUtils.mkdir_p(@evidence_root)
   end
 
